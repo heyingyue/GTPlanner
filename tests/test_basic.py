@@ -65,7 +65,8 @@ def test_project_structure():
     key_dirs = [
         'agent',
         'utils',
-        'api'
+        'agent/api',
+        'mcp'
     ]
     
     for dir_name in key_dirs:

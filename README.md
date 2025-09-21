@@ -89,7 +89,7 @@ Here's the **smoothest** and **ready-to-use** GTPlanner experience path — from
 
 #### Environment Setup
 
-* **Python ≥ 3.10** (3.11+ recommended)
+* **Python ≥ 3.11** (3.11+ recommended)
 * Package manager: **uv** (recommended) or **pip**
 * Prepare an OpenAI-compatible LLM API Key (e.g., `OpenAI` / `Anthropic` / `Azure OpenAI` / self-hosted endpoints)
 
@@ -342,7 +342,7 @@ JINA_API_KEY="your-jina-key"  # For web search functionality
 
 ## 📋 Environment Requirements (Backend and CLI)
 
-- **Python**: 3.10 or higher
+- **Python**: 3.11 or higher
 - **Package Manager**: [uv](https://github.com/astral-sh/uv) (recommended) or pip
 - **LLM API Access**: Any OpenAI-compatible API endpoint (e.g., OpenAI, Anthropic, or a local model)
 
@@ -600,18 +600,19 @@ GTPlanner/
 
 ### Core Dependencies
 - **Python** >= 3.11 - Runtime environment
-- **openai** >= 1.0.0 - LLM API communication
+- **openai** >= 1.0.0 (installed: 1.79.0) - LLM API communication
 - **pocketflow** == 0.0.3 - Asynchronous workflow engine
+- **pocketflow-agui** == 0.1.0 - Asynchronous GUI components
 - **pocketflow-tracing** >= 0.1.4 - Execution tracing system
 - **dynaconf** >= 3.1.12 - Configuration management
-- **aiohttp** >= 3.8.0 - Asynchronous HTTP client
+- **aiohttp** >= 3.12.14 (installed: 3.12.15) - Asynchronous HTTP client
 - **json-repair** >= 0.45.0 - JSON response repair
 - **python-dotenv** >= 1.0.0 - Environment variable loading
 
 ### API Dependencies
 - **fastapi** == 0.115.9 - REST API framework
 - **uvicorn** == 0.23.1 - ASGI server
-- **pydantic** >= 2.5.0 - Data validation
+- **pydantic** >= 2.5.0 (installed: 2.11.4) - Data validation
 
 ### CLI Dependencies
 - **rich** >= 13.0.0 - Terminal beautification and interaction
@@ -620,8 +621,12 @@ GTPlanner/
 - **fastmcp** - Model Context Protocol (MCP) implementation
 
 ### Development Dependencies
-- **pytest** >= 8.4.1 - Testing framework
-- **pytest-asyncio** >= 1.1.0 - Asynchronous test support
+- **pytest** >= 8.4.1 (installed: 8.4.1) - Testing framework
+- **pytest-asyncio** >= 1.1.0 - Asynchronous testing support
+- **pytest-cov** >= 7.0.0 (installed: 7.0.0) - Test coverage reporting
+- **coverage** >= 7.10.6 (installed: 7.10.6) - Code coverage analysis
+- **psutil** >= 7.1.0 (installed: 7.1.0) - System and process utilities
+- **trio** >= 0.31.0 (installed: 0.31.0) - Alternative async library for testing
 
 ---
 
